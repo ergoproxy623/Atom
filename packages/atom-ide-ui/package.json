@@ -74,7 +74,7 @@
     "vscode-debugprotocol": "1.24.0",
     "vscode-jsonrpc": "3.3.0",
     "vscode-uri": "1.0.1",
-    "xterm": "3.5.1"
+    "xterm": "4.1.0"
   },
   "deprecated": false,
   "description": "A collection of Atom UIs to support language services.",
