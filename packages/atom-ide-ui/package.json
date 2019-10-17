@@ -55,7 +55,7 @@
     "nuclide-prebuilt-libs": "0.5.2",
     "nullthrows": "1.0.0",
     "react": "16.4.1",
-    "react-dom": "16.4.1",
+    "react-dom": "16.10.2",
     "react-virtualized": "9.18.5",
     "redux": "3.6.0",
     "redux-logger": "3.0.6",
