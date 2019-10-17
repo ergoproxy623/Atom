@@ -1,0 +1,51 @@
+'.source.js':
+  ' Create controller':
+    'prefix' : 'ngcont'
+    'body': """(function(){
+      'use strict';
+
+        angular.module('$1')
+        .controller( '$2', $2);
+
+        function $2 () {
+
+        }
+
+      })();"""
+  'Add state':
+     'prefix': 'ngstate'
+     'body': """state('$1', {
+       url: '$2',
+       views: {
+           'default': {
+              templateUrl: 'template.html',
+              controller: 'controller',
+              controllerAs: 'vm'
+            }
+          }
+     })"""
+  'Create directive':
+    'prefix': 'ngdir'
+    'body' : """
+    (function (){
+      'use strict';
+
+    angular.module('$1')
+      .directive('$2',$2);
+
+    function $2 () {
+      return {
+        templateUrl: '$3',
+        restrict: '$4',
+        controller: $5,
+        controllerAs: $6
+      };
+    }
+
+    function $5($7)
+    {
+
+    }
+
+    })();
+    """

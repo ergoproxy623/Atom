@@ -1,0 +1,52 @@
+{
+  "_from": "https://www.atom.io/api/packages/b-bootstrap-autocomplete/versions/0.4.6/tarball",
+  "_id": "b-bootstrap-autocomplete@0.4.6",
+  "_inBundle": false,
+  "_integrity": "sha512-qyj+7N5ANrcU5c5Bgr2aG3mQu28M4OOtDBvKDVEbEJky7SRUbvRdI18LeYqFwSpCTQb8DZ2gPU7UmuYdLJjCZQ==",
+  "_location": "/b-bootstrap-autocomplete",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/b-bootstrap-autocomplete/versions/0.4.6/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/b-bootstrap-autocomplete/versions/0.4.6/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/b-bootstrap-autocomplete/versions/0.4.6/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/b-bootstrap-autocomplete/versions/0.4.6/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/b-bootstrap-autocomplete/versions/0.4.6/tarball",
+  "_shasum": "72fca1f66edcdf5ba121f970122d59fb8d574439",
+  "_spec": "https://www.atom.io/api/packages/b-bootstrap-autocomplete/versions/0.4.6/tarball",
+  "_where": "/tmp/apm-install-dir-119917-18938-ugte4b.chhd",
+  "activationCommands": {
+    "atom-workspace": "b-angular-bootstrap:toggle"
+  },
+  "author": {
+    "name": "emerson.morgado@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/emorgado/b-bootstrap-autocomplete/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Customized Angular bootstrap autocomplete",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/emorgado/b-bootstrap-autocomplete#readme",
+  "keywords": [
+    "angular",
+    "bootstrap",
+    "autocomplete"
+  ],
+  "license": "MIT",
+  "name": "b-bootstrap-autocomplete",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emorgado/b-bootstrap-autocomplete.git"
+  },
+  "version": "0.4.6"
+}

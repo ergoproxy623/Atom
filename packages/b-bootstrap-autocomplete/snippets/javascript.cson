@@ -1,0 +1,172 @@
+'.source.js':
+
+    # Javascript Module
+    'Javascript Module declaration':
+        prefix: 'b-js-module-with-angular'
+        body:
+            """
+            (function(angular){
+                'use strict';
+
+            })(angular);
+            """
+
+    # Angular new App Module
+    'Angular new App Module declaration':
+        prefix: 'b-angular-new-app-module'
+        body:
+            """
+            (function(angular){
+                'use strict';
+
+                angular
+                    .module('${1:application}.${2:module}', [
+                        'ngRoute',
+                        'ngMessages',
+                        'ngAnimate',
+                        'ngSanitize',
+                        'ngResource'
+                        ])
+                    .constant('config', {
+                        'dateConfig' : {
+                            'altDateInputFormats': ['d!/M!/yyyy'],
+                            'dateFormat': 'dd/MM/yyyy'
+                        }
+                    })
+                    .config(['$locationProvider', '$routeProvider',
+                        function($locationProvider, $routeProvider) {
+
+                            $routeProvider.otherwise({
+                                redirectTo: '/'
+                            });
+                            $locationProvider.html5Mode({
+                                enabled: true,
+                                requireBase: true
+                            });
+                        }
+                    ]);
+
+            })(angular);
+            """
+
+    # Angular new Module
+    'Angular new Module declaration':
+        prefix: 'b-angular-new-module'
+        body:
+            """
+            (function(angular){
+                'use strict';
+
+                angular
+                    .module('${1:application}.${2:module}', [
+                        'ngRoute'
+                        ])
+                    .config(['$routeProvider', function($routeProvider) {
+
+                        $routeProvider.when('/', {
+                            templateUrl: 'app/${3:module}/view.html',
+                            controller: '${4:controllerName}Ctrl',
+                            controllerAs: 'vm'
+                        });
+
+                    }]);
+
+            })(angular);
+            """
+    # Angular new Controller
+    'Angular new controller declaration':
+        prefix: 'b-angular-new-controller'
+        body:
+            """
+            (function(angular){
+                'use strict';
+
+                angular
+                    .module('${1:application}.${2:module}')
+                    .controller('${3:controlleName}Ctrl', ${3:controlleName}Ctrl);
+
+                /* @ngInject */
+                function ${3:controlleName}Ctrl($log){
+                    var vm = this;
+
+                    vm.resourceNamePluralized = "${3:controllerName}s";
+
+                    // --- Initialization
+
+                    // --- Implementation
+                }
+
+            })(angular);
+            """
+
+    # Angular new APIService
+    'Angular new APIService declaration':
+        prefix: 'b-angular-new-api-service'
+        body:
+            """
+            (function(angular){
+                'use strict';
+
+                angular
+                    .module('${1:application}.${2:module}')
+                    .factory('${3:serviceName}APIService', ${3:serviceName}APIService);
+
+                /* @ngInject */
+                function ${3:serviceName}APIService($http, $log){
+                    var service = {
+                        search: search
+                    };
+                    return service;
+
+                    // -- Implementation
+                    function search(queryString){
+                        return $http.get('api/${3:serviceName}/search'.concat(queryString));
+                    }
+
+                }
+
+            })(angular);
+            """
+
+    # Angular new Resource Service
+    'Angular new Resource Service declaration':
+        prefix: 'b-angular-new-resource-service'
+        body:
+            """
+            (function(angular){
+                'use strict';
+
+                angular
+                    .module('${1:application}.${2:module}')
+                    .factory('${3:resourceName}', ${3:resourceName});
+
+                /* @ngInject */
+                function ${3:resourceName}($resource){
+                    return $resource('/api/${4:resourcePath}/:id', {}, {
+                        query: {
+                            method: 'GET',
+                            isArray: false
+                        },
+                        update: {
+                            method: 'PUT',
+                            params: {
+                                id: "@id"
+                            }
+                        }
+                    });
+                }
+
+            })(angular);
+            """
+
+    # Angular then expression, to work with assync callback's
+    'Angular then expression, to work with assync callback\'s':
+        prefix: 'b-then-callback'
+        body:
+            """
+            .then( function success(response){
+                $log.info(response);
+            }, function error(response){
+                $log.error(response);
+            });
+            """

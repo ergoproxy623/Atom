@@ -1,0 +1,37 @@
+'.text.html':
+  'ngFor - Angular 2 snippet':
+    'prefix': 'ng2for'
+    'body': """*ngFor="#${1:item} of ${2:list}\""""
+  'ngIf - Angular 2 snippet':
+    'prefix': 'ng2if'
+    'body': """*ngIf="${1:expression}\""""
+  'ngSwitch - Angular 2 snippet':
+    'prefix': 'ng2switch'
+    'body': """
+    <div [ngSwitch]="${1:conditionExpression}">
+      <template [ngSwitchWhen]="${2:caseExp}">
+
+      </template>
+      <template ngSwitchDefault>
+
+      </template>
+    </div>
+    """
+  'ngClass - Angular 2 snippet':
+    'prefix': 'ng2class'
+    'body': """[ngClass]="{'${1:cssClass}': ${2:expression}}\""""
+  'ngModel - Angular 2 snippet':
+    'prefix': 'ng2model'
+    'body': """[(ngModel)]="${1:binding}\""""
+  'click link - Angular 2 snippet':
+    'prefix': 'ng2_a.click'
+    'body': """<a href="" (click)="${1:methodToCall}">${2:label}</a>"""
+  'click button - Angular 2 snippet':
+    'prefix': 'ng2_button.click'
+    'body': """<button class="button" (click)="${1:methodToCall}">${1:label}</button>"""
+  'create input - Angular 2 snippet':
+    'prefix': 'ng2_input'
+    'body': """<input type="${1:text}" [(ngModel)]="${2:var}">"""
+  'create input with label asociate - Angular 2 snippet':
+    'prefix': 'ng2_input_label'
+    'body': """<label for="${1:id}">${2:label}</label><input type="${3:text}" id="${1:id}" [(ngModel)]="${4:var}">"""

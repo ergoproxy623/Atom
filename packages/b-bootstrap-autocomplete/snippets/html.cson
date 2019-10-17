@@ -1,0 +1,107 @@
+'.text.html':
+
+	# Form
+	'Bootstrap Form':
+		prefix: 'b-bootstrap-form'
+		body: """
+			<form name="${1:name:form}" novalidate="" autocomplete="off">
+
+			</form>
+		"""
+
+	# Form Group
+	'Bootstrap Form Group':
+		prefix: 'b-bootstrap-form-group'
+		body: """
+			<div class="form-group col-sm-X" ng-class="{'has-error': form.${1:name}.$invalid && form.${1:name}.$dirty}">
+			  <label for="${1:name}" class="control-label">${2:label}</label>
+
+			  <div ng-messages="form.${1:name}.$error" ng-show="form.${1:name}.$invalid && form.${1:name}.$dirty">
+				  <p ng-message="required" class="help-block">Informe o ${2:label}!</p>
+			  </div>
+			</div>
+		"""
+
+	# Field text
+	'Bootstrap field Text':
+		prefix: 'b-bootstrap-field-text'
+		body: """
+			<input type="text"
+				   name="${1:name}"
+				   ng-model="vm.${2:model}.${1:name}"
+				   ng-required="${3:true|false}"
+				   class="form-control"
+				/>
+		"""
+
+	# Field number
+	'Bootstrap field Number':
+		prefix: 'b-bootstrap-field-number'
+		body: """
+			<input type="number"
+				   name="${1:name}"
+				   ng-model="vm.${2:model}.${1:name}"
+				   ng-required="${3:true|false}"
+				   class="form-control"
+				/>
+		"""
+
+	# Field select
+	'Bootstrap field select':
+		prefix: 'b-bootstrap-field-select'
+		body: """
+			<select name="${1:name}"
+                    ng-model="vm.${2:model}.${1:name}"
+					ng-options="item as item for item in vm.itens"
+					class="form-control"></select>
+		"""
+
+	# Field checkbox
+	'Bootstrap field checkbox':
+		prefix: 'b-bootstrap-field-checkbox'
+		body: """
+			<p class="form-control-static">
+			   <input type="checkbox"
+					  name="${1:name}"
+   				      ng-model="vm.${2:model}.${1:name}"
+					/>
+			</p>
+		"""
+
+	# Field date
+	'Bootstrap field date':
+		prefix: 'b-bootstrap-field-date'
+		body: """
+			<p class="input-group">
+				<input
+					type="text"
+					name="${1:name}"
+ 				    ng-model="vm.${2:model}.${1:name}"
+					uib-datepicker-popup="vm.dateConfig.dateFormat"
+					is-open="vm.dateFieldsStatus.${1:name}"
+					datepicker-options="vm.${1:name}DatePickerOptions"
+					ng-required="true"
+					close-text="Close"
+					alt-input-formats="vm.dateConfig.altDateInputFormats"
+					class="form-control"
+					/>
+				<span class="input-group-btn">
+					<button type="button" class="btn btn-default" ng-click="vm.${1:name}Open()">
+						<i class="glyphicon glyphicon-calendar"></i>
+					</button>
+				</span>
+			</p>
+		"""
+
+	# Field textarea
+	'Bootstrap field textarea':
+		prefix: 'b-bootstrap-field-textarea'
+		body: """
+			<textarea name="${1:name}"
+					  rows="5"
+					  cols="40"
+   				      ng-model="vm.${2:model}.${1:name}"
+					  ng-required="${3:true|false}"
+					  class="form-control"
+					  ></textarea>
+		"""

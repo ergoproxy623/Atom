@@ -1,0 +1,45 @@
+{
+  "_from": "https://www.atom.io/api/packages/chaps-angular2-snippets/versions/0.7.0/tarball",
+  "_id": "chaps-angular2-snippets@0.7.0",
+  "_inBundle": false,
+  "_integrity": "sha512-rXZQsgXDPX6mEQ+CDdRlW/3WdE6/hWluAijS8ovjMlvJPdt0AuFFaEZL8kpVvZbiwx101x8b3hGeJlMb5Ea5mQ==",
+  "_location": "/chaps-angular2-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/chaps-angular2-snippets/versions/0.7.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/chaps-angular2-snippets/versions/0.7.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/chaps-angular2-snippets/versions/0.7.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/chaps-angular2-snippets/versions/0.7.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/chaps-angular2-snippets/versions/0.7.0/tarball",
+  "_shasum": "dad227352cf381f299743ef0499a217763e35e6d",
+  "_spec": "https://www.atom.io/api/packages/chaps-angular2-snippets/versions/0.7.0/tarball",
+  "_where": "/tmp/apm-install-dir-119917-18781-1duwq0h.8qe2",
+  "bugs": {
+    "url": "https://github.com/quentinchap/chaps-angular2-snippets/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Angular 2 snippets.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/quentinchap/chaps-angular2-snippets#readme",
+  "keywords": [
+    "angular2",
+    "typescript"
+  ],
+  "license": "MIT",
+  "name": "chaps-angular2-snippets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quentinchap/chaps-angular2-snippets.git"
+  },
+  "version": "0.7.0"
+}
