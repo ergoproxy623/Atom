@@ -1,0 +1,1 @@
+{"digest":"4fa86921c8551e17f206fc0e875366306a5777bd","css":".nuclide-ui-section-collapsable {\n  cursor: pointer;\n}\n.nuclide-ui-section-collapsable:hover {\n  color: #fff;\n}\n","imports":[{"path":"node_modules/atom-dark-ui/styles/ui-variables.less","digest":"bbc53164b15cea5f3aeeddd1ea77a4e7bd5f8503"}],"version":1}

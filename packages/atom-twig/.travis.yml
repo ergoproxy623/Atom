@@ -1,0 +1,33 @@
+dist: trusty
+language: node
+sudo: required
+
+notifications:
+    email: false
+
+services:
+    - docker
+
+addons:
+  apt:
+    packages:
+      - libsecret-1-dev
+
+jobs:
+  include:
+    - stage: Cson Linting
+      script:
+        - docker run -tv ${PWD}:/coffeelint purplebabar/coffeelint */*.cson
+
+    - stage: Atom Package Manager Publishing
+      node_js: '8'
+      if: branch = master
+      before_script:
+        - npm i atom-package-manager
+      script:
+        - git remote set-url origin https://PurpleBabar:${GITHUB_ACCESS_TOKEN}@github.com/PurpleBabar/atom-twig.git
+        - git remote -v
+        - git config --global user.email "travis@purplebabar.io"
+        - git config --global user.name "Travis_for_PurpleBabar"
+        - apm login --token ${ATOM_ACCESS_TOKEN}
+        - apm publish minor

@@ -1,0 +1,55 @@
+{
+  "_from": "https://www.atom.io/api/packages/logo-file-icons/versions/1.13.0/tarball",
+  "_id": "logo-file-icons@1.13.0",
+  "_inBundle": false,
+  "_integrity": "sha512-c5MOBTMXMH2IPKx55hxL0uQ4diRLZPKwKAm8Yu+MOx6JxNo0+T1imGtnpj30RpHMkCn9baW/Hs6QHoQ68/6+XA==",
+  "_location": "/logo-file-icons",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/logo-file-icons/versions/1.13.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/logo-file-icons/versions/1.13.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/logo-file-icons/versions/1.13.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/logo-file-icons/versions/1.13.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/logo-file-icons/versions/1.13.0/tarball",
+  "_shasum": "10c3099300637f7247573fe51ba9c5422b53a1b3",
+  "_spec": "https://www.atom.io/api/packages/logo-file-icons/versions/1.13.0/tarball",
+  "_where": "/tmp/apm-install-dir-119916-11239-16i1vea.jxpv",
+  "author": {
+    "name": "Manuel Bieh",
+    "email": "atom@manuelbieh.de"
+  },
+  "bugs": {
+    "url": "https://github.com/manuelbieh/logo-file-icons/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Nguyen Long Nhat",
+      "email": "torn4dom4n@gmail.com"
+    }
+  ],
+  "deprecated": false,
+  "description": "Add some nice logo icons to your files in Atom.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/manuelbieh/logo-file-icons#readme",
+  "keywords": [
+    "logos",
+    "icons",
+    "fileicon"
+  ],
+  "license": "MIT",
+  "name": "logo-file-icons",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manuelbieh/logo-file-icons.git"
+  },
+  "version": "1.13.0"
+}

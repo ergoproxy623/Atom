@@ -1,0 +1,45 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-twig/versions/4.2.0/tarball",
+  "_id": "atom-twig@4.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-S9SRSwRZIcidBG5ajwK1EpyXBGpRdZYZaNUd3IJcjkFuc7LCpUk+O20OIzXESr2UdqDO6w65vaD2j2C0NKoIpA==",
+  "_location": "/atom-twig",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-twig/versions/4.2.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-twig/versions/4.2.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-twig/versions/4.2.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-twig/versions/4.2.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-twig/versions/4.2.0/tarball",
+  "_shasum": "24c39f3f925e68b30b2b4a5b8d7afb87bc6b06ac",
+  "_spec": "https://www.atom.io/api/packages/atom-twig/versions/4.2.0/tarball",
+  "_where": "/tmp/apm-install-dir-119916-11197-1f5ez2n.sf52",
+  "bugs": {
+    "url": "https://github.com/purplebabar/atom-twig/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Twig support for Atom.",
+  "engines": {
+    "atom": ">0.10.0"
+  },
+  "homepage": "https://github.com/purplebabar/atom-twig#readme",
+  "keywords": [
+    "twig",
+    "autocomplete"
+  ],
+  "license": "MIT",
+  "name": "atom-twig",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purplebabar/atom-twig.git"
+  },
+  "version": "4.2.0"
+}

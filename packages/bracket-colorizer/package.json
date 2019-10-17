@@ -1,0 +1,54 @@
+{
+  "_from": "https://www.atom.io/api/packages/bracket-colorizer/versions/1.4.0/tarball",
+  "_id": "bracket-colorizer@1.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-fNoiDUU7D/zuXFcO02Erw7Q+p1k14ilCMMBGFBdmNdKwMedxTi+EXg0B35XTEoDfx/3oWGn8qQc1giyCSnvQNQ==",
+  "_location": "/bracket-colorizer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/bracket-colorizer/versions/1.4.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/bracket-colorizer/versions/1.4.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/bracket-colorizer/versions/1.4.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/bracket-colorizer/versions/1.4.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/bracket-colorizer/versions/1.4.0/tarball",
+  "_shasum": "33a17a36a57f9c797d51f8f0926f60e4bbedbec3",
+  "_spec": "https://www.atom.io/api/packages/bracket-colorizer/versions/1.4.0/tarball",
+  "_where": "/tmp/apm-install-dir-119916-13986-1xamvf3.5w6m",
+  "atomTestRunner": "./spec/runner",
+  "bugs": {
+    "url": "https://github.com/vn-ki/bracket-colorizer/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "minimatch": "^3.0.4"
+  },
+  "deprecated": false,
+  "description": "Colorize brackets based on their depth",
+  "devDependencies": {
+    "atom-jasmine3-test-runner": "^4.3.7",
+    "eslint": "^6.0.1"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/vn-ki/bracket-colorizer#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/bracket-colorizer",
+  "name": "bracket-colorizer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vn-ki/bracket-colorizer.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "atom --test spec"
+  },
+  "version": "1.4.0"
+}

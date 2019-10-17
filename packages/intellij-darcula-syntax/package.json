@@ -1,0 +1,47 @@
+{
+  "_from": "https://www.atom.io/api/packages/intellij-darcula-syntax/versions/1.0.11/tarball",
+  "_id": "intellij-darcula-syntax@1.0.11",
+  "_inBundle": false,
+  "_integrity": "sha512-hQeTT+SM6oeWmnnGpDYnKVMHosaU3FyX5ADpzAv2OaIx0uH4sSR9owgsCJ0+g+Qg8FK8fTYS32l8CAj+TaJzvA==",
+  "_location": "/intellij-darcula-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/intellij-darcula-syntax/versions/1.0.11/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/intellij-darcula-syntax/versions/1.0.11/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/intellij-darcula-syntax/versions/1.0.11/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/intellij-darcula-syntax/versions/1.0.11/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/intellij-darcula-syntax/versions/1.0.11/tarball",
+  "_shasum": "0a8f68191be58393a5a461f762ac68058be89b10",
+  "_spec": "https://www.atom.io/api/packages/intellij-darcula-syntax/versions/1.0.11/tarball",
+  "_where": "/tmp/apm-install-dir-119916-16916-8mheet.j1lu6",
+  "bugs": {
+    "url": "https://github.com/dmitmel/atom-intellij-dracula-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Theme for Atom inspired by JetBrain's Darcula theme.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/dmitmel/atom-intellij-dracula-syntax#readme",
+  "keywords": [
+    "syntax",
+    "theme",
+    "dark",
+    "darcula"
+  ],
+  "license": "Apache-2.0",
+  "name": "intellij-darcula-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitmel/atom-intellij-dracula-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "1.0.11"
+}

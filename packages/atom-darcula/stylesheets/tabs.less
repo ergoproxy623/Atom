@@ -1,0 +1,98 @@
+@import "ui-variables";
+@tab-radius: 3px;
+@modified-icon-width: 8px;
+@tab-skew: 30deg;
+@tab-top-padding: 5px;
+@tab-bottom-border-height: 8px;
+@tab-border: 1px solid @tab-border-color;
+@tab-bar-bottom-border-color: #111;
+
+.tab-bar {
+  height: 31px;
+  background-image: -webkit-linear-gradient(top, #494a4b, #4f4f50);
+  border-top: 1px solid #616161;
+  box-shadow: inset 0 -8px 8px -4px rgba(0,0,0, .15);
+  padding: 0;
+  box-sizing: border-box;
+
+  .tab {
+    position: relative;
+    top: @tab-top-padding;
+    height: 24px;
+    line-height: 22px;
+    color: #d3d3d3;
+    padding-left: 0;
+    margin-left: 0;
+    border: 1px solid #343638;
+    transition: color .1s ease-in;
+
+    &, &:before {
+      background-image: -webkit-linear-gradient(top, lighten(#333, 7%), #333);
+    }
+
+    &:before {
+      height: 0px;
+    }
+
+    .close-icon {
+      z-index: 3;
+      line-height: 21px;
+    }
+    &.modified:not(:hover) .close-icon {
+      top: @tab-height/2 - @modified-icon-width/2 + 1px;
+      right: 14px;
+      width: @modified-icon-width;
+      height: @modified-icon-width;
+    }
+
+    .title{
+      padding-left: 10px;
+    }
+  }
+
+  .tab.active {
+    z-index: 10;
+    line-height: 22px;
+    color: @text-color-highlight;
+    height: 24px;
+    border-top: 1px solid #6e6e70;
+    border-right: 1px solid #6e6e70;
+    border-left: 1px solid #6e6e70;
+    background-image: -webkit-linear-gradient(top, #666666, #4d4d4d) !important;
+
+    .title{
+      position: relative;
+      top: 1px;
+    }
+
+    .close-icon {
+      line-height: 21px;
+    }
+
+    &, &:before {
+      background-image: -webkit-linear-gradient(top, lighten(@tab-background-color-active, 7%), @tab-background-color-active);
+      height: 24px;
+      border-bottom: 0 none;
+    }
+
+    &:before {
+      border: none;
+      box-shadow: inset 1px 1px 0 @tab-border-color, -4px -4px 4px rgba(0,0,0,.1);
+    }
+  }
+
+  .tab:hover {
+    color: @text-color-highlight;
+  }
+
+  .tab.active:hover .close-icon {
+    color: @text-color-highlight;
+  }
+
+  .placeholder {
+    height: @tab-height + @tab-top-padding + @tab-bottom-border-height;
+    &:after {
+      top: @tab-height + @tab-top-padding + @tab-bottom-border-height;
+    }
+  }
+}

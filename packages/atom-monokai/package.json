@@ -1,0 +1,60 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-monokai/versions/0.10.9/tarball",
+  "_id": "atom-monokai@0.10.9",
+  "_inBundle": false,
+  "_integrity": "sha512-m2OthaKCWJQXuhROSOygQCoIpwE/YkUI/r4zrqvNdcCjn3KX7wqPbmI9+nlcbnczMe3NPf0/0ZDIQY/mC7GgMA==",
+  "_location": "/atom-monokai",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-monokai/versions/0.10.9/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-monokai/versions/0.10.9/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-monokai/versions/0.10.9/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-monokai/versions/0.10.9/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-monokai/versions/0.10.9/tarball",
+  "_shasum": "3678602a1ffb3d828af2bce4b611e49b45ccfc78",
+  "_spec": "https://www.atom.io/api/packages/atom-monokai/versions/0.10.9/tarball",
+  "_where": "/tmp/apm-install-dir-119916-16569-1le5ce3.qku8",
+  "bugs": {
+    "url": "https://github.com/burntime/atom-monokai/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Monokai syntax theme for Atom Dark, One Dark, Seti UI and other",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-stylelint": "^3.8.0",
+    "stylelint-config-primer": "^1.4.0"
+  },
+  "dist": {
+    "shasum": "4cd9c25def7cd564111f923a3c8e817175abdf4c"
+  },
+  "engines": {
+    "atom": ">=1.13.0"
+  },
+  "homepage": "https://github.com/burntime/atom-monokai",
+  "keywords": [
+    "monokai",
+    "seti-ui",
+    "dark",
+    "syntax"
+  ],
+  "license": "MIT",
+  "name": "atom-monokai",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burntime/atom-monokai.git"
+  },
+  "scripts": {
+    "gulp": "gulp",
+    "test": "npm run gulp -- test"
+  },
+  "theme": "syntax",
+  "version": "0.10.9"
+}

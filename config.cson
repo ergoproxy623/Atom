@@ -1,0 +1,13 @@
+"*":
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "atom-dark-ui"
+      "intellij-darcula-syntax"
+    ]
+  "exception-reporting":
+    userId: "51f7f987-470b-4da6-8bb8-deb2d11427f4"
+  "linter-ui-default":
+    showPanel: true
+  welcome:
+    showOnStartup: false

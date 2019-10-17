@@ -1,0 +1,71 @@
+{
+  "_from": "https://www.atom.io/api/packages/angular-snippets/versions/7.0.5/tarball",
+  "_id": "angular-snippets@7.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-cM+VzaDeA6mP1ggnYONXLgVGr1oze59hdbHZJltTCgWEZNwWZPkg/aSH0L4Bo8LUQajutgmhapiiry6eK02wmw==",
+  "_location": "/angular-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/angular-snippets/versions/7.0.5/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/angular-snippets/versions/7.0.5/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/angular-snippets/versions/7.0.5/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/angular-snippets/versions/7.0.5/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/angular-snippets/versions/7.0.5/tarball",
+  "_shasum": "1ffb5d7f26d3fc883f2baeb92be44a1761b29158",
+  "_spec": "https://www.atom.io/api/packages/angular-snippets/versions/7.0.5/tarball",
+  "_where": "/tmp/apm-install-dir-119916-24438-8pn615.ix72x",
+  "activationCommands": {
+    "atom-workspace": "angular-snippets:toggle"
+  },
+  "bugs": {
+    "url": "https://github.com/naoyayamamoto/angular-snippets/issues"
+  },
+  "bundleDependencies": false,
+  "categories": [
+    "Snippets"
+  ],
+  "deprecated": false,
+  "description": "Angular Snippets (TypeScript, Html, Angular Material, Flex Layout, ngRx, RxJS, PWA & Testing) Updated for v7",
+  "displayName": "Angular 7 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/naoyayamamoto/angular-snippets#readme",
+  "icon": "images/angular.png",
+  "keywords": [
+    "Angular",
+    "TypeScript",
+    "HTML",
+    "Angular Material",
+    "Angular 7"
+  ],
+  "license": "MIT",
+  "name": "angular-snippets",
+  "publisher": "naoyayamamoto",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naoyayamamoto/angular-snippets.git"
+  },
+  "scripts": {
+    "build": "npm run build_snippets; npm run build_readme; npm run dups; npm run count;",
+    "build_html": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"html\"))) | .[].value.body |= join(\"\\n\") | from_entries | {\".text.html.basic\": .}' > snippets/html.json",
+    "build_javascript": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"javascript\"))) | .[].value.body |= join(\"\\n\") | from_entries | {\".source.js\": .}' > snippets/javascript.json",
+    "build_json": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"json\"))) | .[].value.body |= join(\"\\n\") | from_entries | {\".source.json\": .}' > snippets/json.json",
+    "build_readme": "cat src/README_top.md > README.md; npm run generate_readme_table; cat src/README_bottom.md >> README.md;",
+    "build_snippets": "npm run build_html; npm run build_typescript; npm run build_javascript; npm run build_json",
+    "build_typescript": "cat dist/snippets.json | jq -c 'to_entries | map(select(.value.types | contains(\"typescript\"))) | .[].value.body |= join(\"\\n\") | from_entries | {\".source.ts\": .}' > snippets/typescript.json",
+    "count": "cat dist/snippets.json | grep 'prefix' | wc -l",
+    "dup_name": "cat dist/snippets.json | grep 'prefix' | sort | uniq -d",
+    "dup_snippet": "cat dist/snippets.json | grep '\": {' | sort | uniq -d",
+    "dups": "npm run dup_snippet; npm run dup_name",
+    "generate_readme_table": "cat dist/snippets.json | grep '\"prefix\"\\|\"description\"' | sed -e \"s/description//\" | sed -e \"s/prefix//\" | sed -e 's/    \"\": \"//' | sed -e 's/\",//' | sed -e 'N;s/\\n/ | /' | sed -e 's/$/ |/g' | sed -e 's/^/| /' | sort  >> README.md",
+    "prebuild": "find src -name '*.json' -exec cat {} \\; | jq -s 'add' > dist/snippets.json"
+  },
+  "version": "7.0.5"
+}
