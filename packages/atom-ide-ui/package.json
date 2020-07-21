@@ -79,7 +79,7 @@
   "deprecated": false,
   "description": "A collection of Atom UIs to support language services.",
   "devDependencies": {
-    "codecov": "2.3.0",
+    "codecov": "3.7.1",
     "eslint-plugin-dependencies": "2.4.0",
     "eslint-plugin-flowtype": "2.39.1",
     "eslint-plugin-jasmine": "2.9.1",
